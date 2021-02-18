@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: thales
+      changes:
+      - createTable:
+          tableName: Task
+          columns:
+            - column:
+                name: ID
+                type: serial
+                autoIncrement: true
+                constraints:
+                  primaryKey: true
+                  nullable: false
+            - column:
+                name: DESCRIPTION
+                type: varchar(255)
+                constraints:
+                  nullable: true
+            - column:
+                name: TITLE
+                type: varchar(255)
+                constraints:
+                  nullable: true
+            - column:
+                name: STATUS
+                type: int
+                constraints:
+                  nullable: true

@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: thales
+      changes:  
+      - insert:  
+          tableName: Task
+          columns:  
+          - column:
+              name: DESCRIPTION
+              value: Descrição da tarefa 1
+          - column:
+              name: TITLE
+              value: Titulo da tarefa 1
+          - column:
+              name: STATUS
+              value: 0
